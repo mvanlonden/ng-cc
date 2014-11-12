@@ -9,7 +9,7 @@
 angular.module('ng-cc')
   .directive('ccInput', function () {
     return {
-      templateUrl: 'views/ccinput.html',
+      templateUrl: '../../views/ccinput.html',
       restrict: 'E',
       replace: true,
       scope: {},
