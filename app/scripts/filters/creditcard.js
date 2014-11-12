@@ -14,7 +14,6 @@ angular.module('singleFieldCcApp')
 		return (this.slice(0,idx) + s + this.slice(idx + Math.abs(rem)));
 	};
     return function (input) {
-    	console.log(input);
     	if (!input) {
     		return;
     	}

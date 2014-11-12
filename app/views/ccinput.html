@@ -1,3 +1,7 @@
 <div class="ccContainer">
-	<cc-number></cc-number>
+	<cc-number number="number" on-complete="moveTo('date')" ng-show="currentField === 'number'" update="currentField"></cc-number>
+	<input type="text" ng-click="currentField = 'number'" ng-model="lastFour" ng-hide="currentField === 'number'">
+	<cc-date on-complete="moveTo('zip')" update="currentField" ng-hide="currentField === 'number'"></cc-date>
+	<cc-zip on-complete="moveTo('cvc')" update="currentField" ng-hide="currentField === 'number'"></cc-zip>
+	<cc-cvc on-complete="validateCC()" update="currentField" ng-hide="currentField === 'number'"></cc-cvc>
 </div>

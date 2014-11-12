@@ -12,7 +12,25 @@ angular.module('singleFieldCcApp')
       templateUrl: 'views/ccinput.html',
       restrict: 'E',
       replace: true,
-      link: function postLink(scope, element, attrs) {
+      scope: {},
+      link: function postLink(scope, element) {
+      	console.log(element.find('input'));
+      	scope.currentField = 'number';
+      	scope.moveTo = function (field) {
+      		scope.currentField = field;
+      	};
+      	scope.validateCC = function() {
+      		element.find('input').addClass('valid');
+      		element.addClass('valid');
+      		// angular.forEach(inputs, function(input){
+      		// 	input.addClass('.valid');
+      		// });
+
+      	};
+      	scope.$watch('number', function () {
+      		if (!scope.number) {return;}
+      		scope.lastFour = scope.number.substr(12);
+      	});
       }
     };
   });
