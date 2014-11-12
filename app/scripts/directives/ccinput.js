@@ -9,7 +9,7 @@
 angular.module('ng-cc')
   .directive('ccInput', function () {
     return {
-      templateUrl: '../../views/ccinput.html',
+      templateUrl: './../../views/ccinput.html',
       restrict: 'E',
       replace: true,
       scope: {},
@@ -21,10 +21,6 @@ angular.module('ng-cc')
       	scope.validateCC = function() {
       		element.find('input').addClass('valid');
       		element.addClass('valid');
-      		// angular.forEach(inputs, function(input){
-      		// 	input.addClass('.valid');
-      		// });
-
       	};
       	scope.$watch('number', function () {
       		if (!scope.number) {return;}
