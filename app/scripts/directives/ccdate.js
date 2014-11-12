@@ -19,18 +19,17 @@ angular.module('singleFieldCcApp')
       link: function postLink(scope, element) {
       	scope.$watch('update', function() {
       		if (scope.update === 'date') {
-      			console.log('date time');
       			$timeout(function() {
 	      			element[0].focus();
-      			}, 50);
+		  			element.addClass('current');
+      			}, 10);
       		}
-      		console.log(scope.update);
       	});	
       	scope.$watch('date', function() {
       		if (!scope.date) {return;}
-      		console.log(scope.date.length);
       		if (scope.date.length === 4) {
       			scope.complete();
+      			element.removeClass('current');
       		}
       	});
       }

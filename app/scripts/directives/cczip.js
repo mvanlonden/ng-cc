@@ -20,14 +20,14 @@ angular.module('singleFieldCcApp')
       	scope.$watch('update', function() {
       		if (scope.update === 'zip') {
       			element[0].focus();
+	  			element.addClass('current');
       		}
-      		console.log(scope.update);
       	});	
       	scope.$watch('zip', function() {
       		if (!scope.zip) {return;}
-      		console.log(scope.zip.length);
       		if (scope.zip.length === 5) {
       			scope.complete();
+	  			element.removeClass('current');
       		}
       	});
       }

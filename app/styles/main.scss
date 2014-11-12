@@ -26,13 +26,13 @@ body {
 		height: 28px;
 		border: none;
 		font-size: 17px;
-		color: #16191b;
+		color: #eaeaea;
 		padding: 0px 9px;
 		margin: 10px 0px;
 		border-right: 1.5px solid #eaeaea;
 		width: 67px;
-		&.complete {
-			color: #eaeaea;
+		&.current {
+			color: #16191b;
 		}
 		&:first-of-type {
 			width: 100%;

@@ -14,7 +14,6 @@ angular.module('singleFieldCcApp')
       replace: true,
       scope: {},
       link: function postLink(scope, element) {
-      	console.log(element.find('input'));
       	scope.currentField = 'number';
       	scope.moveTo = function (field) {
       		scope.currentField = field;

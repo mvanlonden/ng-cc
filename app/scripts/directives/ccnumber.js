@@ -21,8 +21,8 @@ angular.module('singleFieldCcApp')
       	scope.$watch('update', function() {
       		if (scope.update === 'number') {
       			element[0].focus();
+      			element.addClass('current');
       		}
-      		console.log(scope.update);
       	});	
 
       	// element.on('focus', function() {
@@ -32,7 +32,6 @@ angular.module('singleFieldCcApp')
       	// });
       	scope.$watch('creditCard', function() {
       		if (!scope.creditCard) {return;}
-      		console.log(scope.creditCard.length);
       		if (scope.creditCard.length === 16) {
       			scope.complete();
       			scope.number = scope.creditCard;

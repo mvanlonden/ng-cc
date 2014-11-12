@@ -20,15 +20,15 @@ angular.module('singleFieldCcApp')
       	scope.$watch('update', function() {
       		if (scope.update === 'cvc') {
       			element[0].focus();
+	  			element.addClass('current');
       		}
-      		console.log(scope.update);
       	});	
         scope.$watch('cvc', function() {
       		if (!scope.cvc) {return;}
-      		console.log(scope.cvc.length);
       		if (scope.cvc.length === 3) {
       			scope.complete();
       			element[0].blur();
+	  			element.removeClass('current');
       		}
       	});
       }
