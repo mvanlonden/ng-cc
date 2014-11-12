@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name singleFieldCcApp.directive:ccCvc
+ * @name ng-cc.directive:ccCvc
  * @description
  * # ccCvc
  */
-angular.module('singleFieldCcApp')
+angular.module('ng-cc')
   .directive('ccCvc', function () {
     return {
       template: '<input type="text" ng-model="cvc" maxlength="3" placeholder="CVC">',

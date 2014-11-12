@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name singleFieldCcApp.directive:ccZip
+ * @name ng-cc.directive:ccZip
  * @description
  * # ccZip
  */
-angular.module('singleFieldCcApp')
+angular.module('ng-cc')
   .directive('ccZip', function () {
     return {
       template: '<input type="text" ng-model="zip" maxlength="5" placeholder="ZIP">',

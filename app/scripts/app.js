@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name singleFieldCcApp
+ * @name ng-cc
  * @description
- * # singleFieldCcApp
+ * # ng-cc
  *
  * Main module of the application.
  */
 angular
-  .module('singleFieldCcApp', [
+  .module('ng-cc', [
     'ngRoute'
   ])
   .config(function ($routeProvider) {

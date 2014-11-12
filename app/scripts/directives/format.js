@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name singleFieldCcApp.directive:format
+ * @name ng-cc.directive:format
  * @description
  * # format
  */
-angular.module('singleFieldCcApp')
+angular.module('ng-cc')
   .directive('format', function ($filter) {
     return {
       	require: '?ngModel',

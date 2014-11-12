@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc filter
- * @name singleFieldCcApp.filter:creditcard
+ * @name ng-cc.filter:creditcard
  * @function
  * @description
  * # creditcard
- * Filter in the singleFieldCcApp.
+ * Filter in the ng-cc.
  */
-angular.module('singleFieldCcApp')
+angular.module('ng-cc')
   .filter('creditcard', function () {
 	String.prototype.splice = function( idx, rem, s ) {
 		return (this.slice(0,idx) + s + this.slice(idx + Math.abs(rem)));

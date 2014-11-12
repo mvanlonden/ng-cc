@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name singleFieldCcApp.directive:mvCCInput
+ * @name ng-cc.directive:mvCCInput
  * @description
  * # mvCCInput
  */
-angular.module('singleFieldCcApp')
+angular.module('ng-cc')
   .directive('ccInput', function () {
     return {
       templateUrl: 'views/ccinput.html',

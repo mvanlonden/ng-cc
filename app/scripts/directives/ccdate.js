@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name singleFieldCcApp.directive:ccDate
+ * @name ng-cc.directive:ccDate
  * @description
  * # ccDate
  */
-angular.module('singleFieldCcApp')
+angular.module('ng-cc')
   .directive('ccDate', function ($timeout) {
     return {
       template: '<input type="text" ng-model="date" format="monthYear" maxlength="5" placeholder="MM/YY">',

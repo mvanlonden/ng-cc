@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc filter
- * @name singleFieldCcApp.filter:monthYear
+ * @name ng-cc.filter:monthYear
  * @function
  * @description
  * # monthYear
- * Filter in the singleFieldCcApp.
+ * Filter in the ng-cc.
  */
-angular.module('singleFieldCcApp')
+angular.module('ng-cc')
   .filter('monthYear', function () {
   	String.prototype.splice = function( idx, rem, s ) {
 		return (this.slice(0,idx) + s + this.slice(idx + Math.abs(rem)));

@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name singleFieldCcApp.directive:ccNumber
+ * @name ng-cc.directive:ccNumber
  * @description
  * # ccNumber
  */
-angular.module('singleFieldCcApp')
+angular.module('ng-cc')
   .directive('ccNumber', function () {
     return {
       template: '<input type="text" ng-model="creditCard" format="creditcard" maxlength="19" placeholder="Credit card number">',
