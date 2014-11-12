@@ -10,7 +10,7 @@
     "angular-scenario": "~1.2.0"
   },
   "appPath": "app",
-  "main": ["dist/scripts/single-field-cc.js", "dist/styles/single-field-cc.css", "dist/views/ccinput.html"],
+  "main": ["dist/scripts/ng-cc.js", "dist/styles/ng-cc.css", "dist/views/ccinput.html"],
   "keywords": ["angular", "angularjs", "credit", "card", "single", "field"],
   "authors": ["Melchert van Londen <melvanlonden@gmail.com>"],
   "repository":  {
