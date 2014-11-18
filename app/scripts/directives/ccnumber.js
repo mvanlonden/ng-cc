@@ -20,11 +20,15 @@ angular.module('ng-cc')
       link: function postLink(scope, element) {
         var first = true;
       	scope.$watch('update', function() {
-      		if (scope.update === 'number' && !first) {
-      			element[0].focus();
+          console.log('first');
+      		if (scope.update === 'number') {
+            console.log('not first');
+            if (!first) {
+        			element[0].focus();
+            }
       			element.addClass('current');
-      		}
-          first = false;
+            first = false;
+          }
       	});	
 
       	// element.on('focus', function() {
