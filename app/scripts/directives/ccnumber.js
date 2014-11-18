@@ -18,11 +18,13 @@ angular.module('ng-cc')
       	'number': '='
       },
       link: function postLink(scope, element) {
+        var first = true;
       	scope.$watch('update', function() {
-      		if (scope.update === 'number') {
+      		if (scope.update === 'number' && !first) {
       			element[0].focus();
       			element.addClass('current');
       		}
+          first = false;
       	});	
 
       	// element.on('focus', function() {
